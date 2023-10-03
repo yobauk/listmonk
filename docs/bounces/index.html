@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.2.3">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.3">
     
     
       
@@ -24,10 +24,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.0e669242.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.79e020e9.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.85d0ee34.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.a5377069.min.css">
       
       
 
@@ -828,17 +828,22 @@
 <td>Sendgrid / Twilio Signed event webhook</td>
 <td><a href="https://docs.sendgrid.com/for-developers/tracking-events/getting-started-event-webhook-security-features">More info</a></td>
 </tr>
+<tr>
+<td><code>https://listmonk.yoursite.com/webhooks/service/postmark</code></td>
+<td>Postmark webhook</td>
+<td><a href="https://postmarkapp.com/developer/webhooks/webhooks-overview">More info</a></td>
+</tr>
 </tbody>
 </table>
 <h2 id="verification">Verification<a class="headerlink" href="#verification" title="Permanent link">&para;</a></h2>
-<p>You can use Amazon's test emails to make sure everything's working: https://docs.aws.amazon.com/ses/latest/dg/send-an-email-from-console.html
+<p>If you're using Amazon SES you can use Amazon's test emails to make sure everything's working: <a href="https://docs.aws.amazon.com/ses/latest/dg/send-an-email-from-console.html">https://docs.aws.amazon.com/ses/latest/dg/send-an-email-from-console.html</a>
 <div class="highlight"><pre><span></span><code>success@simulator.amazonses.com
 bounce@simulator.amazonses.com
 complaint@simulator.amazonses.com
 suppressionlist@simulator.amazonses.com
 </code></pre></div>
 They all count as <em>hard</em> bounces. </p>
-<p>Exporting bounces: https://github.com/knadh/listmonk/issues/863</p>
+<p><strong>Exporting bounces</strong>: <a href="https://github.com/knadh/listmonk/issues/863">https://github.com/knadh/listmonk/issues/863</a></p>
 
 
 
@@ -880,10 +885,11 @@ They all count as <em>hard</em> bounces. </p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.78eede0e.min.js"></script>
+      <script src="../assets/javascripts/bundle.6eac0284.min.js"></script>
       
     
   </body>

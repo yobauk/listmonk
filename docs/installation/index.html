@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.2.3">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.3">
     
     
       
@@ -24,10 +24,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.0e669242.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.79e020e9.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.85d0ee34.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.a5377069.min.css">
       
       
 
@@ -366,6 +366,13 @@
         <li class="md-nav__item">
   <a href="#3rd-party-hosting" class="md-nav__link">
     3rd party hosting
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tutorials" class="md-nav__link">
+    Tutorials
   </a>
   
 </li>
@@ -873,6 +880,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#tutorials" class="md-nav__link">
+    Tutorials
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -890,6 +904,7 @@
 
 <h1 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h1>
 <p>listmonk requires Postgres ⩾ 12.</p>
+<p>See the "<a href="#tutorials">Tutorials</a>" section at the bottom for detailed guides. </p>
 <h2 id="binary">Binary<a class="headerlink" href="#binary" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Download the <a href="https://github.com/knadh/listmonk/releases">latest release</a> and extract the listmonk binary.</li>
@@ -899,7 +914,11 @@
 </ul>
 <h2 id="docker">Docker<a class="headerlink" href="#docker" title="Permanent link">&para;</a></h2>
 <p>The latest image is available on DockerHub at <code>listmonk/listmonk:latest</code></p>
-<p>Use the sample <a href="https://github.com/knadh/listmonk/blob/master/docker-compose.yml">docker-compose.yml</a> to run listmonk and Postgres DB with docker-compose as follows:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Listmonk's docs and scripts use <code>docker compose</code>, which is compatible with the latest version of docker. If you installed docker and docker-compose from your Linux distribution, you probably have an older version and will need to use the <code>docker-compose</code> command instead, or you'll need to update docker manually. <a href="https://gist.github.com/MaximilianKohler/e5158fcfe6de80a9069926a67afcae11#docker-update">More info</a>.</p>
+</div>
+<p>Use the sample <a href="https://github.com/knadh/listmonk/blob/master/docker-compose.yml">docker-compose.yml</a> to run listmonk and Postgres DB with <code>docker compose</code> as follows:</p>
 <h3 id="demo">Demo<a class="headerlink" href="#demo" title="Permanent link">&para;</a></h3>
 <h4 id="easy-docker-install">Easy Docker install<a class="headerlink" href="#easy-docker-install" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>listmonk-demo
@@ -907,7 +926,7 @@ sh<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</spa
 </code></pre></div>
 <h4 id="manual-docker-install">Manual Docker install<a class="headerlink" href="#manual-docker-install" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code>wget<span class="w"> </span>-O<span class="w"> </span>docker-compose.yml<span class="w"> </span>https://raw.githubusercontent.com/knadh/listmonk/master/docker-compose.yml
-docker-compose<span class="w"> </span>up<span class="w"> </span>-d<span class="w"> </span>demo-db<span class="w"> </span>demo-app
+docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> </span>-d<span class="w"> </span>demo-db<span class="w"> </span>demo-app
 </code></pre></div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -930,16 +949,16 @@ sh<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</spa
 <p>It's recommended to examine the contents of the shell script, before running in your environment.</p>
 </div>
 <h4 id="manual-docker-install_1">Manual Docker install<a class="headerlink" href="#manual-docker-install_1" title="Permanent link">&para;</a></h4>
-<p>The following workflow is recommended to setup <code>listmonk</code> manually using <code>docker-compose</code>. You are encouraged to customise the contents of <code>docker-compose.yml</code> to your needs. The overall setup looks like:</p>
+<p>The following workflow is recommended to setup <code>listmonk</code> manually using <code>docker compose</code>. You are encouraged to customise the contents of <code>docker-compose.yml</code> to your needs. The overall setup looks like:</p>
 <ul>
-<li><code>docker-compose up db</code> to run the Postgres DB.</li>
-<li><code>docker-compose run --rm app ./listmonk --install</code> to setup the DB (or <code>--upgrade</code> to upgrade an existing DB).</li>
+<li><code>docker compose up db</code> to run the Postgres DB.</li>
+<li><code>docker compose run --rm app ./listmonk --install</code> to setup the DB (or <code>--upgrade</code> to upgrade an existing DB).</li>
 <li>Copy <code>config.toml.sample</code> to your directory and make the following changes:<ul>
 <li><code>app.address</code> =&gt; <code>0.0.0.0:9000</code> (Port forwarding on Docker will work only if the app is advertising on all interfaces.)</li>
 <li><code>db.host</code> =&gt; <code>listmonk_db</code> (Container Name of the DB container)</li>
 </ul>
 </li>
-<li>Run <code>docker-compose up app</code> and visit <code>http://localhost:9000</code>.</li>
+<li>Run <code>docker compose up app</code> and visit <code>http://localhost:9000</code>.</li>
 </ul>
 <h5 id="mounting-a-custom-configtoml">Mounting a custom config.toml<a class="headerlink" href="#mounting-a-custom-configtoml" title="Permanent link">&para;</a></h5>
 <p>To mount a local <code>config.toml</code> file, add the following section to <code>docker-compose.yml</code>:</p>
@@ -981,13 +1000,13 @@ sh<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</spa
 <p class="admonition-title">Tip</p>
 <ul>
 <li>See <a href="../configuration">configuring with environment variables</a> for variables like <code>app.admin_password</code> and <code>db.password</code></li>
-<li>Ensure that both <code>app</code> and <code>db</code> containers are in running. If the containers are not running, restart them <code>docker-compose restart app db</code>.</li>
+<li>Ensure that both <code>app</code> and <code>db</code> containers are in running. If the containers are not running, restart them <code>docker compose restart app db</code>.</li>
 <li>Refer to <a href="https://yasoob.me/posts/setting-up-listmonk-opensource-newsletter-mailing/">this tutorial</a> for setting up a production instance with Docker + Nginx + LetsEncrypt SSL.</li>
 </ul>
 </div>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>The example <code>docker-compose.yml</code> file works with Docker Engine 18.06.0+ and <code>docker-compose</code> which supports file format 3.7.</p>
+<p>The example <code>docker-compose.yml</code> file works with Docker Engine 24.0.5+ and Docker Compose version v2.20.2+.</p>
 </div>
 <h2 id="compiling-from-source">Compiling from source<a class="headerlink" href="#compiling-from-source" title="Permanent link">&para;</a></h2>
 <p>To compile the latest unreleased version (<code>master</code> branch):</p>
@@ -1001,8 +1020,15 @@ sh<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</spa
 <h2 id="3rd-party-hosting">3rd party hosting<a class="headerlink" href="#3rd-party-hosting" title="Permanent link">&para;</a></h2>
 <p><a href="https://railway.app/new/template/listmonk"><img src="https://camo.githubusercontent.com/081df3dd8cff37aab35044727b02b94a8e948052487a8c6253e190f5940d776d/68747470733a2f2f7261696c7761792e6170702f627574746f6e2e737667" alt="One-click deploy on Raleway" style="max-height: 32px;" /></a>
 <br />
-<a href="https://www.pikapods.com/pods?run=listmonk"><img src="https://www.pikapods.com/static/run-button.svg" alt="Deploy on PikaPod" /></a>
-<a href ="https://github.com/paulrudy/listmonk-on-fly">Tutorial for deploying on Fly.io</a></p>
+<a href="https://www.pikapods.com/pods?run=listmonk"><img src="https://www.pikapods.com/static/run-button.svg" alt="Deploy on PikaPod" /></a></p>
+<h2 id="tutorials">Tutorials<a class="headerlink" href="#tutorials" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://github.com/knadh/listmonk/issues/120#issuecomment-1421838533">Informal step-by-step on how to get started with Listmonk using <strong>Railway</strong></a></li>
+<li><a href="https://gist.github.com/MaximilianKohler/e5158fcfe6de80a9069926a67afcae11">Complete Listmonk setup guide. Step-by-step tutorial for installation and all basic functions. <strong>Amazon EC2 &amp; SES</strong></a></li>
+<li><a href="https://github.com/knadh/listmonk/issues/1208">Step-by-step guide on how install and set up Listmonk on a server (<strong>AWS Lightsail</strong>)</a></li>
+<li><a href="https://www.youtube.com/watch?v=fAOBqgR9Yfo"><strong>Binary</strong> install on your PC</a>. Discussions of limitations: [<a href="https://github.com/knadh/listmonk/issues/862#issuecomment-1307328228">1</a>][<a href="https://github.com/knadh/listmonk/issues/248#issuecomment-1320806990">2</a>]. </li>
+<li><a href="https://github.com/paulrudy/listmonk-on-fly">Tutorial for deploying on <strong>Fly.io</strong></a> -- Currently <a href="https://github.com/knadh/listmonk/issues/984#issuecomment-1694545255">not working</a></li>
+</ul>
 
 
 
@@ -1044,10 +1070,11 @@ sh<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</spa
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.78eede0e.min.js"></script>
+      <script src="../assets/javascripts/bundle.6eac0284.min.js"></script>
       
     
   </body>

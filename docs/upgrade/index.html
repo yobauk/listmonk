@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.2.3">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.3">
     
     
       
@@ -24,10 +24,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.0e669242.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.79e020e9.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.85d0ee34.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.a5377069.min.css">
       
       
 
@@ -738,9 +738,9 @@
 </ul>
 <h2 id="docker">Docker<a class="headerlink" href="#docker" title="Permanent link">&para;</a></h2>
 <ul>
-<li><code>docker-compose pull</code> to pull the latest version from DockerHub.</li>
-<li><code>docker-compose run --rm app ./listmonk --upgrade</code> to upgrade an existing DB.</li>
-<li>Run <code>docker-compose up app db</code> and visit <code>http://localhost:9000</code>.</li>
+<li><code>docker compose pull</code> to pull the latest version from DockerHub.</li>
+<li><code>docker compose run --rm app ./listmonk --upgrade</code> to upgrade an existing DB.</li>
+<li>Run <code>docker compose up app db</code> and visit <code>http://localhost:9000</code>.</li>
 </ul>
 <h2 id="railway">Railway<a class="headerlink" href="#railway" title="Permanent link">&para;</a></h2>
 <ul>
@@ -755,13 +755,13 @@
 <ol>
 <li>Stop listmonk.</li>
 <li>Restore your pre-upgrade database.</li>
-<li>If you're using docker-compose, edit <code>docker-compose.yml</code> and change <code>listmonk:latest</code> to <code>listmonk:v2.4.0</code> <em>(for example)</em>.</li>
+<li>If you're using <code>docker compose</code>, edit <code>docker-compose.yml</code> and change <code>listmonk:latest</code> to <code>listmonk:v2.4.0</code> <em>(for example)</em>.</li>
 <li>Restart.</li>
 </ol>
 <p><strong>Example with docker:</strong></p>
 <ol>
 <li>Stop listmonk (app):
-<div class="highlight"><pre><span></span><code>sudo docker container stop listmonk_app
+<div class="highlight"><pre><span></span><code>sudo docker stop listmonk_app
 </code></pre></div></li>
 <li>Restore your pre-upgrade db (required) <em>(be careful, this will wipe your existing DB)</em>:
 <div class="highlight"><pre><span></span><code>psql -h 127.0.0.1 -p 9432 -U listmonk
@@ -776,7 +776,7 @@ psql -h 127.0.0.1 -p 9432 -U listmonk -W listmonk &lt; listmonk-preupgrade-db.sq
   image: listmonk/listmonk:v2.4.0
 </code></pre></div></li>
 <li>Restart:
-<code>sudo docker-compose up -d app db nginx certbot</code></li>
+<code>sudo docker compose up -d app db nginx certbot</code></li>
 </ol>
 
 
@@ -819,10 +819,11 @@ psql -h 127.0.0.1 -p 9432 -U listmonk -W listmonk &lt; listmonk-preupgrade-db.sq
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.78eede0e.min.js"></script>
+      <script src="../assets/javascripts/bundle.6eac0284.min.js"></script>
       
     
   </body>
