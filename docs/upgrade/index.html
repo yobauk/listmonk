@@ -9,14 +9,14 @@
       
       
       
-        <link rel="prev" href="../installation/">
+        <link rel="prev" href="../configuration/">
       
       
-        <link rel="next" href="../configuration/">
+        <link rel="next" href="../concepts/">
       
       
       <link rel="icon" href="../images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
@@ -48,7 +48,7 @@
     
       <link rel="stylesheet" href="../static/style.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -95,7 +95,7 @@
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -119,32 +119,34 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -155,6 +157,7 @@
     </div>
   </div>
 </div>
+      
     
     
   </nav>
@@ -202,8 +205,10 @@
       <a href=".." class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Introduction
+    
   </span>
   
 
@@ -214,6 +219,59 @@
     
       
       
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
   
   
   
@@ -222,8 +280,10 @@
       <a href="../installation/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Installation
+    
   </span>
   
 
@@ -231,9 +291,33 @@
     </li>
   
 
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Configuration
     
-      
-      
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
   
   
     
@@ -251,8 +335,10 @@
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
+  
   <span class="md-ellipsis">
     Upgrade
+    
   </span>
   
 
@@ -262,8 +348,10 @@
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
+  
   <span class="md-ellipsis">
     Upgrade
+    
   </span>
   
 
@@ -320,6 +408,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#upgrading-to-v4xx" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upgrading to v4.x.x
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -327,23 +424,11 @@
     </li>
   
 
-    
+              
+            
+          </ul>
+        </nav>
       
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../configuration/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Configuration
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -354,22 +439,67 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../developer-setup/" class="md-nav__link">
+    
+    
+      
         
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
   
   <span class="md-ellipsis">
-    Developer setup
+    Using listmonk
+    
   </span>
   
 
-      </a>
-    </li>
-  
-
-    
-      
-      
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Using listmonk
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
   
   
   
@@ -378,8 +508,10 @@
       <a href="../concepts/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Concepts
+    
   </span>
   
 
@@ -387,29 +519,10 @@
     </li>
   
 
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../querying-and-segmentation/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Querying and segmenting subscribers
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
+              
+            
+              
+                
   
   
   
@@ -418,8 +531,10 @@
       <a href="../templating/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Templating
+    
   </span>
   
 
@@ -427,9 +542,33 @@
     </li>
   
 
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../querying-and-segmentation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Querying and segmenting subscribers
     
-      
-      
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
   
   
   
@@ -438,8 +577,10 @@
       <a href="../bounces/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Bounce processing
+    
   </span>
   
 
@@ -447,9 +588,10 @@
     </li>
   
 
-    
-      
-      
+              
+            
+              
+                
   
   
   
@@ -458,8 +600,10 @@
       <a href="../messengers/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Messengers
+    
   </span>
   
 
@@ -467,9 +611,10 @@
     </li>
   
 
-    
-      
-      
+              
+            
+              
+                
   
   
   
@@ -478,8 +623,10 @@
       <a href="../archives/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Archives
+    
   </span>
   
 
@@ -487,9 +634,10 @@
     </li>
   
 
-    
-      
-      
+              
+            
+              
+                
   
   
   
@@ -498,8 +646,10 @@
       <a href="../i18n/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Internationalization
+    
   </span>
   
 
@@ -507,9 +657,10 @@
     </li>
   
 
-    
-      
-      
+              
+            
+              
+                
   
   
   
@@ -518,8 +669,10 @@
       <a href="../external-integration/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Integrating with external systems
+    
   </span>
   
 
@@ -527,9 +680,128 @@
     </li>
   
 
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../roles-and-permissions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    User roles and permissions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../oidc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    OIDC SSO
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
     
       
       
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    API
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            API
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
   
   
   
@@ -538,8 +810,10 @@
       <a href="../apis/apis/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    API
+    Introduction
+    
   </span>
   
 
@@ -547,9 +821,33 @@
     </li>
   
 
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../apis/sdks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SDKs and libs
     
-      
-      
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
   
   
   
@@ -558,8 +856,10 @@
       <a href="../apis/subscribers/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    API / Subscribers
+    Subscribers
+    
   </span>
   
 
@@ -567,9 +867,10 @@
     </li>
   
 
-    
-      
-      
+              
+            
+              
+                
   
   
   
@@ -578,8 +879,10 @@
       <a href="../apis/lists/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    API / Lists
+    Lists
+    
   </span>
   
 
@@ -587,9 +890,10 @@
     </li>
   
 
-    
-      
-      
+              
+            
+              
+                
   
   
   
@@ -598,8 +902,10 @@
       <a href="../apis/import/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    API / Import
+    Import
+    
   </span>
   
 
@@ -607,9 +913,10 @@
     </li>
   
 
-    
-      
-      
+              
+            
+              
+                
   
   
   
@@ -618,8 +925,10 @@
       <a href="../apis/campaigns/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    API / Campaigns
+    Campaigns
+    
   </span>
   
 
@@ -627,9 +936,10 @@
     </li>
   
 
-    
-      
-      
+              
+            
+              
+                
   
   
   
@@ -638,8 +948,10 @@
       <a href="../apis/media/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    API / Media
+    Media
+    
   </span>
   
 
@@ -647,9 +959,10 @@
     </li>
   
 
-    
-      
-      
+              
+            
+              
+                
   
   
   
@@ -658,12 +971,68 @@
       <a href="../apis/templates/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    API / Templates
+    Templates
+    
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../apis/transactional/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Transactional
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../apis/bounces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bounces
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -674,16 +1043,150 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../apis/transactional/" class="md-nav__link">
+    
+    
+      
         
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
   
   <span class="md-ellipsis">
-    API / Transactional
+    Maintenance
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Maintenance
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../maintenance/performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Performance
+    
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Contributions
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Contributions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../developer-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Developer setup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -750,6 +1253,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#upgrading-to-v4xx" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upgrading to v4.x.x
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -765,22 +1277,32 @@
                   
 
 
+
 <h1 id="upgrade">Upgrade<a class="headerlink" href="#upgrade" title="Permanent link">&para;</a></h1>
-<p>Some versions may require changes to the database. These changes or database "migrations" are applied automatically and safely, but, it is recommended to take a backup of the Postgres database before running the <code>--upgrade</code> option, especially if you have made customizations to the database tables.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Always take a backup of the Postgres database before upgrading listmonk</p>
+</div>
 <h2 id="binary">Binary<a class="headerlink" href="#binary" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Download the <a href="https://github.com/knadh/listmonk/releases">latest release</a> and extract the listmonk binary.</li>
-<li><code>./listmonk --upgrade</code> to upgrade an existing DB. Upgrades are idempotent and running them multiple times have no side effects.</li>
-<li>Run <code>./listmonk</code> and visit <code>http://localhost:9000</code>.</li>
+<li>Stop the running instance of listmonk.</li>
+<li>Download the <a href="https://github.com/knadh/listmonk/releases">latest release</a> and extract the listmonk binary and overwrite the previous version.</li>
+<li><code>./listmonk --upgrade</code> to upgrade an existing database schema. Upgrades are idempotent and running them multiple times have no side effects.</li>
+<li>Run <code>./listmonk</code> again.</li>
 </ul>
 <p>If you installed listmonk as a service, you will need to stop it before overwriting the binary. Something like <code>sudo systemctl stop listmonk</code> or <code>sudo service listmonk stop</code> should work. Then overwrite the binary with the new version, then run <code>./listmonk --upgrade, and</code>start` it back with the same commands.</p>
 <p>If it's not running as a service, <code>pkill -9 listmonk</code> will stop the listmonk process.</p>
 <h2 id="docker">Docker<a class="headerlink" href="#docker" title="Permanent link">&para;</a></h2>
-<ul>
-<li><code>docker compose pull</code> to pull the latest version from DockerHub.</li>
-<li><code>docker compose run --rm app ./listmonk --upgrade</code> to upgrade an existing DB.</li>
-<li>Run <code>docker compose up app db</code> and visit <code>http://localhost:9000</code>.</li>
-</ul>
+<p><strong>Important:</strong> The following instructions are for the new <a href="https://github.com/knadh/listmonk/blob/master/docker-compose.yml">docker-compose.yml</a> file.</p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>compose<span class="w"> </span>down<span class="w"> </span>app
+docker<span class="w"> </span>compose<span class="w"> </span>pull
+docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> </span>app<span class="w"> </span>-d
+</code></pre></div>
+<p>If you are using an older docker-compose.yml file, you have to run the <code>--upgrade</code> step manually.</p>
+<div class="highlight"><pre><span></span><code>docker-compose<span class="w"> </span>down
+docker-compose<span class="w"> </span>pull<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>docker-compose<span class="w"> </span>run<span class="w"> </span>--rm<span class="w"> </span>app<span class="w"> </span>./listmonk<span class="w"> </span>--upgrade
+docker-compose<span class="w"> </span>up<span class="w"> </span>-d<span class="w"> </span>app<span class="w"> </span>db
+</code></pre></div>
 <h2 id="railway">Railway<a class="headerlink" href="#railway" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Head to your dashboard, and select your Listmonk project.</li>
@@ -817,6 +1339,20 @@ psql -h 127.0.0.1 -p 9432 -U listmonk -W listmonk &lt; listmonk-preupgrade-db.sq
 <li>Restart:
 <code>sudo docker compose up -d app db nginx certbot</code></li>
 </ol>
+<h2 id="upgrading-to-v4xx">Upgrading to v4.x.x<a class="headerlink" href="#upgrading-to-v4xx" title="Permanent link">&para;</a></h2>
+<p>v4 is a major upgrade from prior versions with significant changes to certain important features and behaviour. It is the first version to have multi-user support and full fledged user management. Prior versions only had a simple BasicAuth for both admin login (browser prompt) and API calls, with the username and password defined in the TOML configuration file.</p>
+<p>It is safe to upgrade an older installation with <code>--upgrade</code>, but there are a few important things to keep in mind. The upgrade automatically imports the <code>admin_username</code> and <code>admin_password</code> defined in the TOML configuration into the new user management system.</p>
+<ol>
+<li>
+<p><strong>New login UI</strong>: Once you upgrade an older installation, the admin dashboard will no longer show the native browser prompt for login. Instead, a new login UI rendered by listmonk is displayed at the URI <code>/admin/login</code>.</p>
+</li>
+<li>
+<p><strong>API credentials</strong>: If you are using APIs to interact with listmonk, after logging in, go to Settings -&gt; Users and create a new API user with the necessary permissions. Change existing API integrations to use these credentials instead of the old username and password defined in the legacy TOML configuration file or environment variables.</p>
+</li>
+<li>
+<p><strong>Credentials in TOML file or old environment variables</strong>: The admin dashboard shows a warning until the <code>admin_username</code> and <code>admin_password</code> fields are removed from the configuration file or old environment variables. In v4.x.x, these are irrelevant as user credentials are stored in the database and managed from the admin UI. IMPORTANT: if you are using APIs to interact with listmonk, follow the previous step before removing the legacy credentials.</p>
+</li>
+</ol>
 
 
 
@@ -846,7 +1382,7 @@ psql -h 127.0.0.1 -p 9432 -U listmonk -W listmonk &lt; listmonk-preupgrade-db.sq
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2019-2023, Kailash Nadh.
+      CC BY-SA 4.0
     </div>
   
   
@@ -867,10 +1403,12 @@ psql -h 127.0.0.1 -p 9432 -U listmonk -W listmonk &lt; listmonk-preupgrade-db.sq
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "navigation.sections", "content.code.copy"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      <script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>
       
     
   </body>

@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../archives/">
+        <link rel="prev" href="../external-integration/">
       
       
-        <link rel="next" href="../external-integration/">
+        <link rel="next" href="../oidc/">
       
       
       <link rel="icon" href="../images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Internationalization - listmonk / Documentation</title>
+        <title>User roles and permissions - listmonk / Documentation</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#internationalization-i18n" class="md-skip">
+        <a href="#user-roles" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Internationalization
+              User roles and permissions
             
           </span>
         </div>
@@ -553,32 +553,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Internationalization
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../i18n/" class="md-nav__link">
         
   
   
@@ -589,77 +567,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#additional-language-packs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Additional language packs
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#customizing-languages" class="md-nav__link">
-    <span class="md-ellipsis">
-      Customizing languages
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#contributing-a-new-language" class="md-nav__link">
-    <span class="md-ellipsis">
-      Contributing a new language
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Contributing a new language">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#using-the-basic-editor" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using the basic editor
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#using-inlang-external-service" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using InLang (external service)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -692,10 +599,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../roles-and-permissions/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    User roles and permissions
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -706,6 +633,51 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#user-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      User roles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      List roles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      API users
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1214,8 +1186,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1224,53 +1194,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#additional-language-packs" class="md-nav__link">
+  <a href="#user-roles" class="md-nav__link">
     <span class="md-ellipsis">
-      Additional language packs
+      User roles
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#customizing-languages" class="md-nav__link">
+  <a href="#list-roles" class="md-nav__link">
     <span class="md-ellipsis">
-      Customizing languages
+      List roles
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#contributing-a-new-language" class="md-nav__link">
+  <a href="#api-users" class="md-nav__link">
     <span class="md-ellipsis">
-      Contributing a new language
+      API users
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Contributing a new language">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#using-the-basic-editor" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using the basic editor
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#using-inlang-external-service" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using InLang (external service)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1290,43 +1236,156 @@
 
 
 
-<h1 id="internationalization-i18n">Internationalization (i18n)<a class="headerlink" href="#internationalization-i18n" title="Permanent link">&para;</a></h1>
-<p>listmonk comes available in multiple languages thanks to language packs contributed by volunteers. A language pack is a JSON file with a map of keys and corresponding translations. The bundled languages can be <a href="https://github.com/knadh/listmonk/tree/master/i18n">viewed here</a>.</p>
-<h2 id="additional-language-packs">Additional language packs<a class="headerlink" href="#additional-language-packs" title="Permanent link">&para;</a></h2>
-<p>These additional language packs can be downloaded and passed to listmonk with the <code>--i18n-dir</code> flag as described in the next section.</p>
+  <h1>User roles and permissions</h1>
+
+<p>listmonk supports (&gt;= v4.0.0) creating systems users with granular permissions to various features, including list-specific permissions. Users can login with a username and password, or via an OIDC (OpenID Connect) handshake if an auth provider is connected. Various permissions can be grouped into "user roles", which can be assigned to users. List-specific permissions can be grouped into "list roles".</p>
+<h2 id="user-roles">User roles<a class="headerlink" href="#user-roles" title="Permanent link">&para;</a></h2>
+<p>A user role is a collection of user related permissions. User roles are attached to user accounts. User roles can be managed in <code>Admin -&gt; Users -&gt; User roles</code> The permissions are described below.</p>
 <table>
 <thead>
 <tr>
-<th>Language</th>
+<th>Group</th>
+<th>Permission</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="https://raw.githubusercontent.com/SvenPe/listmonk/4bbb2e5ebb2314b754cb2318f4f6683a0f854d43/i18n/de.json">Deutsch (formal)</a></td>
-<td>German language with formal pronouns</td>
+<td>lists</td>
+<td>lists:get_all</td>
+<td>Get details of all lists</td>
+</tr>
+<tr>
+<td></td>
+<td>lists:manage_all</td>
+<td>Create, update, and delete all lists</td>
+</tr>
+<tr>
+<td>subscribers</td>
+<td>subscribers:get</td>
+<td>Get individual subscriber details</td>
+</tr>
+<tr>
+<td></td>
+<td>subscribers:get_all</td>
+<td>Get all subscribers and their details</td>
+</tr>
+<tr>
+<td></td>
+<td>subscribers:manage</td>
+<td>Add, update, and delete subscribers</td>
+</tr>
+<tr>
+<td></td>
+<td>subscribers:import</td>
+<td>Import subscribers from external files</td>
+</tr>
+<tr>
+<td></td>
+<td>subscribers:sql_query</td>
+<td>Run SQL queries on subscriber data. <strong>WARNING:</strong> This permission will allow the querying of all lists and subscribers directly from the database with SQL expressions, superceding individual list and subscriber permissions above.</td>
+</tr>
+<tr>
+<td></td>
+<td>tx:send</td>
+<td>Send transactional messages to subscribers</td>
+</tr>
+<tr>
+<td>campaigns</td>
+<td>campaigns:get</td>
+<td>Get and view campaigns belonging to permitted lists</td>
+</tr>
+<tr>
+<td></td>
+<td>campaigns:get_all</td>
+<td>Get and view campaigns across all lists</td>
+</tr>
+<tr>
+<td></td>
+<td>campaigns:get_analytics</td>
+<td>Access campaign performance metrics</td>
+</tr>
+<tr>
+<td></td>
+<td>campaigns:manage</td>
+<td>Create, update, and delete campaigns</td>
+</tr>
+<tr>
+<td>bounces</td>
+<td>bounces:get</td>
+<td>Get email bounce records</td>
+</tr>
+<tr>
+<td></td>
+<td>bounces:manage</td>
+<td>Process and handle bounced emails</td>
+</tr>
+<tr>
+<td></td>
+<td>webhooks:post_bounce</td>
+<td>Receive bounce notifications via webhook</td>
+</tr>
+<tr>
+<td>media</td>
+<td>media:get</td>
+<td>Get uploaded media files</td>
+</tr>
+<tr>
+<td></td>
+<td>media:manage</td>
+<td>Upload, update, and delete media</td>
+</tr>
+<tr>
+<td>templates</td>
+<td>templates:get</td>
+<td>Get email templates</td>
+</tr>
+<tr>
+<td></td>
+<td>templates:manage</td>
+<td>Create, update, and delete templates</td>
+</tr>
+<tr>
+<td>users</td>
+<td>users:get</td>
+<td>Get system user accounts</td>
+</tr>
+<tr>
+<td></td>
+<td>users:manage</td>
+<td>Create, update, and delete user accounts</td>
+</tr>
+<tr>
+<td></td>
+<td>roles:get</td>
+<td>Get user roles and permissions</td>
+</tr>
+<tr>
+<td></td>
+<td>roles:manage</td>
+<td>Create and modify user roles</td>
+</tr>
+<tr>
+<td>settings</td>
+<td>settings:get</td>
+<td>Get system settings</td>
+</tr>
+<tr>
+<td></td>
+<td>settings:manage</td>
+<td>Modify system configuration</td>
+</tr>
+<tr>
+<td></td>
+<td>settings:maintain</td>
+<td>Perform system maintenance tasks</td>
 </tr>
 </tbody>
 </table>
-<h2 id="customizing-languages">Customizing languages<a class="headerlink" href="#customizing-languages" title="Permanent link">&para;</a></h2>
-<p>To customize an existing language or to load a new language, put one or more <code>.json</code> language files in a directory, and pass the directory path to listmonk with the<br /><code>--i18n-dir=/path/to/dir</code> flag.</p>
-<h2 id="contributing-a-new-language">Contributing a new language<a class="headerlink" href="#contributing-a-new-language" title="Permanent link">&para;</a></h2>
-<h3 id="using-the-basic-editor">Using the basic editor<a class="headerlink" href="#using-the-basic-editor" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Visit <a href="https://listmonk.app/i18n">https://listmonk.app/i18n</a></li>
-<li>Click on <code>Createa new language</code>, or to make changes to an existing language, use <code>Load language</code>.</li>
-<li>Translate the text in the text fields on the UI.</li>
-<li>Once done, use the <code>Download raw JSON</code> to download the language file.</li>
-<li>Send a pull request to add the file to the <a href="https://github.com/knadh/listmonk/tree/master/i18n">i18n directory on the GitHub repo</a>. </li>
-</ul>
-<h3 id="using-inlang-external-service">Using InLang (external service)<a class="headerlink" href="#using-inlang-external-service" title="Permanent link">&para;</a></h3>
-<p><a href="https://inlang.com/editor/github.com/knadh/listmonk?ref=badge"><img alt="translation badge" src="https://inlang.com/badge?url=github.com/knadh/listmonk" /></a></p>
-<ul>
-<li>Visit <a href="https://inlang.com/editor/github.com/knadh/listmonk">https://inlang.com/editor/github.com/knadh/listmonk</a></li>
-<li>To make changes and push them, you need to log in to GitHub using OAuth and fork the project from the UI.</li>
-<li>Translate the text in the input fields on the UI. You can use the filters to see only the necessary translations.</li>
-<li>Once you're done, push the changes from the UI and click on "Open a pull request." This will take you to GitHub, where you can write a PR message.</li>
-</ul>
+<h2 id="list-roles">List roles<a class="headerlink" href="#list-roles" title="Permanent link">&para;</a></h2>
+<p>A list role is a collection of permissions assigned per list. Each list can be assigned a view (read) or manage (update) permission. List roles are attached to user accounts. Only the lists defined in a list role is accessible by the user, be it on the admin UI or via API calls. Do note that the <code>lists:get_all</code> and <code>lists:manage_all</code> permissions in user roles override all per-list permissions.</p>
+<h2 id="api-users">API users<a class="headerlink" href="#api-users" title="Permanent link">&para;</a></h2>
+<p>A user account can be of two types, a regular user or an API user. API users are meant for intertacting with the listmonk APIs programmatically. Unlike regular user accounts that have custom passwords or OIDC for authentication, API users get an automatically generated secret token.</p>
 
 
 
